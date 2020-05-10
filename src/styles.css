@@ -1,8 +1,29 @@
 @Import "~bootstrap/dist/css/bootstrap.css";
+
 body{
-  
-    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/2769274/pexels-photo-2769274.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    color: whitesmoke;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 1300px;
-    height: 1200px;
-    }
+    background-size: cover;
+    background-position: relative;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+  }
+  h1{
+   color: white;
+  }
+  .jumbotron{
+    background: none;
+    width: 400px;
+  padding: 20px;
+  margin-bottom: 30px;
+  }
+  .quote-overlay{
+    background-color: black;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+  }
+  
