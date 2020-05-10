@@ -15,6 +15,12 @@ export class QuoteComponent implements OnInit {
     new Quote(4,'Mahatma Gandhi','I will not let anyone walk through my mind with their dirty feet.',new Date(2020,3,14)),
     new Quote(5,'Pablo Picasso','The purpose of art is washing the dust of daily life off our souls.',new Date(2020,3,14)),
   ];
+  addNewQuote(quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
   
   toogleDetails(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
