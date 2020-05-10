@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule,  CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
@@ -14,6 +14,7 @@ import { LikeComponent } from './like/like.component';
 @NgModule({
   declarations: [
     AppComponent ,
+    QuoteComponent,
     QuoteDetailsComponent,
     DateCountPipe,
     QuoteFormComponent,
